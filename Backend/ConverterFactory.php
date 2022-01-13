@@ -16,6 +16,6 @@ class ConverterFactory
                 throw new \Exception('This file type doesn\'t exist');
                 break;
         }
-        if ($converter) return $converter->convert($file);
+        if ($converter) $converter->convert($file);
     }
 }

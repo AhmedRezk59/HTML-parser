@@ -2,6 +2,7 @@
 
 namespace Backend\Interfaces;
 
-interface ConverterInterface {
-    public function convert(array $file);
+interface ConverterInterface
+{
+    public function convert(array $file): void;
 }
