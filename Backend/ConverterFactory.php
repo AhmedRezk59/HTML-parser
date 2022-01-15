@@ -13,7 +13,7 @@ class ConverterFactory
                 $converter = new CSVConverter();
                 break;
             default:
-                throw new \Exception('This file type doesn\'t exist');
+                throw new \Exception('This file type is not supported');
                 break;
         }
         if ($converter) $converter->convert($file);
